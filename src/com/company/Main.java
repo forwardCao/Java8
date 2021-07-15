@@ -2,14 +2,17 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
 
     public static <T> List<T> filterApple(List<T> inventory, ApplePredicate<T> applePredicate) {
         List<T> apples = new ArrayList<>();
+
         for (T apple: inventory) {
             if (applePredicate.test(apple))
                 apples.add(apple);
@@ -33,9 +36,9 @@ public class Main {
 //        System.out.println(result);
 
 
-        forEach(Arrays.asList(1,2,3,5), (Integer i)-> System.out.println(i));
+//        forEach(Arrays.asList(1,2,3,5), (Integer i)-> System.out.println(i));
 
-
+        Supplier
 
 
     }
